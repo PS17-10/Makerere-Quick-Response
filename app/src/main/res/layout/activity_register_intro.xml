@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/QRinfoR1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c6ff00"
+
+    android:padding="16dp"
+    tools:context="com.makererequickresponse.mqr.RegisterIntro">
+
+    <LinearLayout
+        android:id="@+id/QrinfoL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/QRteamtitle"
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/QRTitle"
+        android:textSize="@dimen/QRtitle"
+        android:textAlignment="center"
+        android:textColor="@color/color_yangu"
+        android:textStyle="bold|italic"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:paddingTop="@dimen/desc_padding"
+            android:rotation="-10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/qr2" />
+
+        <ScrollView
+            android:id="@+id/info"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp">
+
+
+            <TextView
+                android:id="@+id/TextLong"
+                android:layout_width="wrap_content"
+                android:textColor="#707070"
+                android:layout_height="wrap_content"
+                android:text="@string/long_string"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+
+
+        </ScrollView>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accept" />
+
+    <Button
+        android:id="@+id/registerbutton"
+        style="@style/Button_style"
+        android:layout_height="32dp"
+        android:background="@color/color_yangu"
+        android:text="@string/register"
+        android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

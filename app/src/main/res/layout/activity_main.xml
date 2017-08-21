@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorPrimaryDark"
+
+    tools:context="com.makererequickresponse.mqr.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainR1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:id="@+id/mainL1"
+            style="@style/my_layout_style">
+
+            <TextView
+                android:id="@+id/memberlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="210dp"
+                android:paddingTop="12dp"
+                android:text="@string/memberlogin"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="@dimen/slide_desc"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <!--
+        android:layout_width="240dp"
+        android:layout_height="400dp"
+
+
+        tools:layout_editor_absoluteY="-5dp"
+        tools:layout_editor_absoluteX="1dp"
+        -->
+
+        <TextView
+            android:id="@+id/need_assistance"
+            style="@style/TextView_style"
+            android:paddingBottom="50dp"
+            android:paddingTop="30dp"
+            android:text="need assistance?"
+            android:textAllCaps="true"
+            android:textColor="#ff0"
+            android:textColorHighlight="#000"
+            android:textSize="@dimen/slide_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/specify"
+            style="@style/TextView_style"
+            android:paddingTop="10dp"
+            android:text="Specify category and tap ALARM to call Emergency"
+            android:textColor="#6F7A8B"
+            android:textSize="@dimen/slide_desc" />
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+
+            <RadioButton
+                android:id="@+id/radio_security"
+                style="@style/RadioButton_style"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="secuity" />
+
+            <RadioButton
+                android:id="@+id/radio_medic"
+                style="@style/RadioButton_style"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="Medical Attention" />
+
+
+        </RadioGroup>
+
+
+        <ImageButton
+            android:id="@+id/alarm_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dots_bottom_margin"
+            android:background="@color/colorPrimaryDark"
+            android:paddingTop="30dp"
+            app:srcCompat="@drawable/alarm"
+            android:onClick="BtnSetEmergency_onClick"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

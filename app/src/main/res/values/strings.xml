@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">MQR</string>
+
+    <string name="next">Next</string>
+    <string name="login_desc">QR Team member Log In</string>
+    <string name="register_desc">QR Team member Register</string>
+    <string name="stdnum">Student No.</string>
+    <string name="email">Email</string>
+    <string name="Name">Name</string>
+    <string name="Map_heading">University Map and Environment</string>
+    <string name="Map_desc">Incase of an emergency, use above map to locate victim...</string>
+    <string name="pass">Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="Course">Course</string>
+    <string name="prompt">You are one step away from joining the Student\'s Security service!</string>
+    <string name="Year">Year</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOG IN</string>
+    <string name="logout">LOG OUT</string>
+    <string name="question">Join Student\'s QR Team?</string>
+    <string name="findout">FIND OUT ABOUT THE QR TEAM</string>
+    <string name="register">REGISTER HERE</string>
+    <string name="sign_up">SIGN UP</string>
+
+    <string name="memberlogin">MEMBER LOGIN</string>
+    <string name="QRTitle">Quick Response Team</string>
+
+    <string name="skip">Skip</string>
+    <string name="start">Start</string>
+    <string name="title_slide1">Makerere Quick Response</string>
+    <string name="desc_slide1">The SOS Application For Makerere University Students</string>
+    <string name="title_slide2">Security</string>
+    <string name="desc_slide2">NEED HELP? Will provide you with help in case of a security threat within the University: Alert the QR!</string>
+    <string name="title_slide3">Medical Assistance</string>
+    <string name="desc_slide3">NEED MEDICAL ATTENTION? Will alert the QR in case you or any other student near you is in need of medical attention: Alert the QR!</string>
+    <string name="long_string">8
+        The MQR application is an SOS(emergency) application meant for Makerere University Students. All service provided through the application is done by the Quick Response Team (QR team).
+
+        The QR team is a voluntary security team made up of students.
+
+        You can join the QR team and take part in the Students\' Security Service by clicking the button below.
+
+        To be a member will require you to take part in all QR Team schedules and activities.
+
+        Are you ready to be a member?
+
+    </string>
+    <string name="title_activity_maps">Map</string>
+</resources>

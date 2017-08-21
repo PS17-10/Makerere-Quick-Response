@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.makererequickresponse.mqr"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//        manifestPlaceholders = [onesignal_app_id               : "860f64fa-3450-4f21-9674-2a8856ba8415",
+//                                onesignal_google_project_number: "REMOTE"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //Add the following block
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+    //    compile 'com.onesignal:OneSignal:[3.6.0, 3.99.99]'
+//    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.google.firebase:firebase-auth:11.0.4'
+    compile 'com.android.support:appcompat-v7:26.0.1'
+    compile 'com.google.android.gms:play-services-maps:11.0.4'
+    compile 'com.google.firebase:firebase-messaging:11.0.4'
+    testCompile 'junit:junit:4.12'
+    compile 'com.firebase:firebase-client-android:2.5.1+'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+}
+
+apply plugin: 'com.google.gms.google-services'

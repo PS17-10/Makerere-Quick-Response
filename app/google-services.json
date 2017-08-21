@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "434755311977",
+    "firebase_url": "https://makerere-quick-response.firebaseio.com",
+    "project_id": "makerere-quick-response",
+    "storage_bucket": "makerere-quick-response.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434755311977:android:0e7418faad8ccc1a",
+        "android_client_info": {
+          "package_name": "com.makererequickresponse.mqr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434755311977-134hhfr2p1gm3m09r6n6i3oc5iu04b28.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.makererequickresponse.mqr",
+            "certificate_hash": "965038d70eb6ae95aac539c0d8f5a25e76704cff"
+          }
+        },
+        {
+          "client_id": "434755311977-1shlrm3u19gol5l6dlflab8gu14l9skn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqlf-P0nhoFKQG-8RWI9oSnkXIQUoZVx8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434755311977-1shlrm3u19gol5l6dlflab8gu14l9skn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
