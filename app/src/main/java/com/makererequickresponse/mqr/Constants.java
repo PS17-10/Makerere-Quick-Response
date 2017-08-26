@@ -19,6 +19,9 @@ public class Constants {
 
     //register.php address in your server
     public static final String REGISTER_URL = "http://192.168.1.106/mqr/register.php";
+    
+    //need to test with static ip address with same address as local host
+    public static final String TEST_URL = "http://192.168.1.106/mqr/register.php";
 
     public static final String MESSAGE_URL  = "http://192.168.1.106/mqr/send.php";
 }
